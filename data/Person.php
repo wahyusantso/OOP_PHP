@@ -35,6 +35,15 @@ class Person
     {
         echo "Author : " . self::AUTHOR . PHP_EOL; // gunakan self keyword untuk akses constant pada function yang berada di satu class yang sama
     }
+
+    /*
+    - destructor, akan otomatis dipanggil ketika object di hapus atau tidak digunakan lagi.
+    - destructor cocok digunakan untuk menutup koneksi database agar terhindar dari memory leak
+    **/
+    function __destruct()
+    {
+        echo "Object person $this->name is destroyed" . PHP_EOL; 
+    }
 }
 
 ?>
