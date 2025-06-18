@@ -13,6 +13,13 @@ class Person
     var string $country = "Indonesia"; //default value
     var ?int $age; //allow nullable
 
+    //constructor adalah function yang dipanggil ketika membuat objek
+    function __construct(string $name, ?int $age) //define constructor
+    {
+        $this->name = $name;
+        $this->age = $age;
+    }
+
     function sayHello(?string $name)
     {
         if (is_null($name))

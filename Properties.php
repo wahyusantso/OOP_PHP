@@ -2,7 +2,7 @@
 
 require_once 'data/Person.php';
 
-$person = new Person();
+$person = new Person("Wahyu", 17);
 $person->name = "Wahyu";
 $person->address = "Jl. Borobudur Cilandak";
 $person->country = "Indonesia";
