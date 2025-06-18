@@ -17,11 +17,16 @@ class Person
     {
         if (is_null($name))
         {
-            echo "Hi, my name is $this->name" . PHP_EOL; //untuk mengakses properti memerlukan keyword $this
+            echo "Hi, my name is $this->name" . PHP_EOL; //untuk mengakses properti object dalam 1 class yang sama memerlukan keyword $this
         } else 
         {
             echo "Hi, my name is $name" . PHP_EOL; //$name berasal dari argumen bukan properti
         }
+    }
+
+    function info()
+    {
+        echo "Author : " . self::AUTHOR . PHP_EOL; // gunakan self keyword untuk akses constant pada function yang berada di satu class yang sama
     }
 }
 
