@@ -4,6 +4,9 @@
 
 class Person 
 {
+
+    const AUTHOR = "Programmer Rumahan";
+
     //deklarasi properti harus diawali dengan var.
     var string $name; //deklarasi type properti ke string, jika type di masukan ke properti tidak sesuai dengan type properti maka otomatis terkonversi ke string (fitur type junggling)
     var string $address;
